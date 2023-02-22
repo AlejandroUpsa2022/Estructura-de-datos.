@@ -1,0 +1,46 @@
+// Ejemplorecursividad.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+/*  Fuente: https://www.programaenlinea.net/ejercicios-recursividad-c/
+    Tema: Recursividad
+    Ejercicio 3: convertir numero decimal a binario
+https://github.com/kinfantas/estructuradedatos/blob/master/recursividad
+*/
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+int fib(int n);
+
+int main() {
+    system("color 0a");
+    int nro;
+    cout << "\n\t\t[     RECURSIVIDAD     ]\n";
+    cout << "\t\t————————\n\n";
+    cout << " EJERCICIO 3: Encontrar el factorial de un numero " << endl << endl;
+    do {
+        cout << " INGRESE NUMERO: ";
+        cin >> nro;
+        if (nro < 0) cout << "\nINGRESE UN NUMERO ENTERO Y POSITIVO… \n";
+    } while (nro < 0);
+    cout << endl;
+    cout << "\n Numero:" << nro << endl;
+    cout << "\n factorial:";
+   cout<<"El valor fib es: "<<fib(nro);
+    return 0;
+}
+
+int fib(int n)
+{
+    if (n == 0)
+        return 0;
+    else if n == 1
+        return 1;
+    else
+        return fib(n-1) + fib(n - 2);
+        
+    
+
+     
+}
