@@ -1,0 +1,52 @@
+n3 :
+peso=float(input("introduce tu peso :"))
+altura=float(input("introduce tu altura :"))
+nombre=input("nombre :")
+imc=(peso/((altura)**2))
+print("señor" , nombre, "su imc es " , imc)
+n4:
+nombre=input("nombre :")
+cantidad=float(input("Cuanto va a invertir :"))
+
+interes=float(input("Porcentaje de interes :"))
+dato=interes/100
+años=float(input("A cuantos años :"))
+capital=cantidad*dato*años
+print("señor" , nombre, "su capital es " , capital)
+n5
+nombre=input("nombre :")
+edad= int(input("ingrese a edad :"))
+genero=input("ingrese genero :")
+    
+if (edad>=18):
+    print(nombre ,"es mayor de edad")
+else: 
+    print(nombre , "es menor de edad")
+n6
+nombre=input("nombre :")
+edad= int(input("ingrese a edad :"))
+genero=input("ingrese genero :")
+    
+if (edad>=65 and genero=="masculino"):
+    print(nombre ,"esta jubilado")
+elif (edad>=60 and genero=="femenino"):
+     print(nombre ,"esta jubilada")
+else:
+    print(nombre ,"no esta jubilado")
+n6
+nombre=input("nombre :")
+edad= int(input("ingrese a edad :"))
+genero=input("ingrese genero :")
+
+while True:
+    num=int(input("numero"))
+    op=input(num, "jubila")
+if num == 0:
+break
+            
+if (edad>=65 and genero=="masculino"):
+    print(nombre ,"esta jubilado")
+elif (edad>=60 and genero=="femenino"):
+     print(nombre ,"esta jubilada")
+else:
+    print(nombre ,"no esta jubilado")
