@@ -1,0 +1,12 @@
+print('Bienvenido Alejandro enseñame tus notas.')
+asignaturas = ['Matemáticas', 'Física', 'Química', 'Historia', 'Lengua']
+notas = {}
+for i in asignaturas:
+    nota = float(input(f'¿Qué nota has sacado en {i}? '))
+    notas[i] = nota
+for nota in notas.sort():
+    if nota >= 51:
+        asignaturas.remove(i)
+        print('Tienes que repetir las siguientes asignaturas:')
+for i in asignaturas:
+    print(i)
